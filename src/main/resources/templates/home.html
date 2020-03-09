@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/home.css}">
+</head>
+<body>
+<h1> Home Page </h1>
+<table>
+    <tr>
+        <th>Book ID</th>
+        <th>User ID</th>
+        <th>Author</th>
+        <th>Book Name</th>
+    </tr>
+    <th:block th:each="book : ${booksList}">
+
+        <tr>
+            <td th:text="${book.id}">...</td>
+            <td th:text="${book.userId}">...</td>
+            <td th:text="${book.author}">...</td>
+            <td th:text="${book.bookName}">...</td>
+        </tr>
+
+        <!--  <tr>
+            <td colspan="2" th:text="${book.bookName}">...</td>
+        </tr>  -->
+    </th:block>
+</table>
+</body>
+</html>

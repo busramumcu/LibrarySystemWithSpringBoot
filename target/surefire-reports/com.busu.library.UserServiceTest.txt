@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.busu.library.UserServiceTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in com.busu.library.UserServiceTest
+testUserFindByName(com.busu.library.UserServiceTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.busu.library.UserServiceTest.testUserFindByName(UserServiceTest.java:28)
+

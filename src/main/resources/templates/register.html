@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="register" class="animate form">
+    <form th:action="@{/register}" method="POST">
+        <h1> Sign up </h1>
+        <p>
+            <label for="name" class="uname" data-icon="u">Your username</label>
+            <input id="name" name="name" required="required" type="text" placeholder="" />
+        </p>
+        <p>
+            <label for="password" class="youmail" data-icon="e" > Your email</label>
+            <input id="password" name="password" required="required" type="password" placeholder=""/>
+        </p>
+        <p class="signin button">
+            <input type="submit" value="Sign up"/>
+        </p>
+        <p class="change_link">
+            Already a member ?
+            <a href="/login" class="to_register"> Go and log in </a>
+        </p>
+    </form>
+</div>
+</body>
+</html>
